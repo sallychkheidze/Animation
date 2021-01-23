@@ -1,0 +1,59 @@
+body {
+	width: 1600px;
+	height: 1000px;
+}
+.hotel1 {
+	float: left;
+	position: relative;
+/*    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;*/
+    transition: all 1s ease 0.5s;  
+}
+.name {
+	float: left;
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	animation:animationname 5s infinite;
+}
+@keyframes animationname {
+	0% {transform: translateY(25px);}
+	25% {transform: translateY(50px);}
+	50% {transform: translateY(100px);}
+	74% {transform: translateY(125px);}
+	100% {transform: translateY(150px);}
+}
+.car {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translate(-50%.-50%);
+    animation:caranimation 5s infinite;
+}
+@keyframes caranimation {
+    0% {transform: translateX(0px);}
+	25% {transform: translateX(100px);}
+	50% {transform: translateX(300px);}
+	74% {transform: translateX(550px);}
+	100% {transform: translateX(800px);}
+}
+.car {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    transform: translate(-50%.-50%);
+    animation:caranimation 5s infinite;
+}
+@keyframes caranimation {
+    0% {transform: translateX(0px);rotate(45deg)}
+	25% {transform: translateX(100px);rotate(90deg)}
+	50% {transform: translateX(300px);rotate(180deg)}
+	74% {transform: translateX(550px);rotate(360deg)}
+	100% {transform: translateX(800px);rotate(45deg)}
+}
