@@ -1,0 +1,78 @@
+body {
+	width: 1600px;
+	height: 1000px;
+}
+.hotel1 {
+	float: left;
+	position: relative;
+/*    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;*/
+    transition: all 1s ease 0.5s;  
+}
+.characters {
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: budapestanimation 5s infinite;
+}
+
+@keyframes budaestanimation{
+	0% {transform: translateX(100px);}
+	25% {transform: translateX(250px);}
+	50% {transform: translateX(450px);}
+	75% {transform: translateX(700px);}
+	100% {transform: translateX(1400px);}
+}
+.name {
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	top:50%;
+	left: 50%
+	transform translate(-50%.-50%);
+	animation:animationname 5s infinite;
+}
+@keyframes animationname {
+	0% {transform: translateY(100px);}
+	25% {transform: translateY(200px);}
+	50% {transform: translateY(300px);}
+	74% {transform: translateY(550px);}
+	100% {transform: translateY(800px);}
+}
+.car {
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%.-50%);
+    animation:caranimation 5s infinite;
+}
+@keyframes caranimation {
+    0% {transform: translateY(100px);}
+	25% {transform: translateY(200px);}
+	50% {transform: translateY(300px);}
+	74% {transform: translateY(550px);}
+	100% {transform: translateY(800px);}
+}
+}
+.key {
+	width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%.-50%);
+    animation:keyanimation 5s infinite;
+}
+@keyframes keyanimation {
+	0% {transform: translateY(100px); rotate(45deg);}
+	25% {transform: translateY(200px); rotate (90deg);}
+	50% {transform: translateY(300px); rotate (180deg);}
+	74% {transform: translateY(550px); rotate (240deg);}
+	100% {transform: translateY(800px); rotate (360deg);}
