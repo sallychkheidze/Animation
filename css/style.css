@@ -19,19 +19,19 @@ body {
 	animation:animationname 5s infinite;
 }
 @keyframes animationname {
-	0% {transform: translateY(25px);}
-	25% {transform: translateY(50px);}
-	50% {transform: translateY(100px);}
-	74% {transform: translateY(125px);}
-	100% {transform: translateY(150px);}
+	0% {transform: translateY(25px); width: 100px;}
+	25% {transform: translateY(50px); width: 200px;}
+	50% {transform: translateY(100px); width: 300px;}
+	74% {transform: translateY(125px); width: 400px;}
+	100% {transform: translateY(150px); width: 500px;}
 }
 .car {
+	float: left;
     width: 200px;
     height: 80px;
     position: absolute;
     top: 100%;
     left: 0%;
-    transform: translate(-50%.-50%);
     animation:caranimation 5s infinite;
 }
 @keyframes caranimation {
@@ -47,13 +47,12 @@ body {
     position: absolute;
     top: 100%;
     left: 90%;
-    transform: translate(-50%.-50%);
     animation:caranimation 5s infinite;
 }
 @keyframes caranimation {
-    0% {transform: translateX(0px);rotate(45deg)}
-	25% {transform: translateX(100px);rotate(90deg)}
-	50% {transform: translateX(300px);rotate(180deg)}
-	74% {transform: translateX(550px);rotate(360deg)}
-	100% {transform: translateX(800px);rotate(45deg)}
+    0% {transform: translateX(0px); rotate(45deg);}
+	25% {transform: translateX(100px); rotate(90deg);}
+	50% {transform: translateX(300px); rotate(180deg);}
+	74% {transform: translateX(550px); rotate(360deg);}
+	100% {transform: translateX(800px); rotate(45deg);}
 }
