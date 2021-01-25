@@ -3,19 +3,19 @@ body {
 	height: 1000px;
 }
 .hotel1 {
-	width: 100%;
+	width: 80%;
 	position: relative;
-/*    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-delay: 0.5s;*/
-    transition: all 1s ease 0.5s;  
+	transition-property: all;
+	background-image: url(img/hotel.jpg);
+	background-repeat: no-repeat;
+	z-index: 1
 }
-.name {
+/*.name {
 	width: 10%;
 	height: 10%;
 	position: absolute;
 	animation:animationname 5s infinite;
+	z-index: 20;
 }
 @keyframes animationname {
 	0% {transform: translate(-10%,-10%); width: 100px;}
@@ -23,26 +23,37 @@ body {
 	50% {transform: translate(-50%,-50%); width: 300px;}
 	74% {transform: translate(-80%,-89%); width: 400px;}
 	100% {transform: translate(-50%,-50%); width: 500px;}
-}
+}*/
 .car {
-    width: 10%;
-    height: 2%;
-    position: absolute;
-    top: 30%%;
-    left: 0%;
+	width: 40%;
+	height: 20%;
+	top: 85%;
+	left: 5%;
+	position: absolute;
+    transition: all 0.5s ease 0.5s;
     animation:caranimation 5s infinite;
+    z-index: 2; 
+}
+.car1 {
+    width: 20%;
+    height:auto;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+  /*  transition: all 0.5s ease 0.5s;
+    animation:caranimation 5s infinite;
+    z-index: 2;*/  
 }
 @keyframes caranimation {
-    0% {transform: translateX(0px);}
-	25% {transform: translateX(100px);}
-	50% {transform: translateX(300px);}
-	74% {transform: translateX(550px);}
-	100% {transform: translateX(800px);}
+
 }
-@keyframes caranimation {
+/*.cake {
+	width: 
+}
+@keyframes cakenimation {
     0% {transform: translateX(0px); rotate(45deg);}
 	25% {transform: translateX(100px); rotate(90deg);}
 	50% {transform: translateX(300px); rotate(180deg);}
 	74% {transform: translateX(550px); rotate(360deg);}
 	100% {transform: translateX(800px); rotate(45deg);}
-}
+}*/
