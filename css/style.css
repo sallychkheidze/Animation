@@ -1,32 +1,40 @@
 body {
 	width: 1600px;
-	height: 1000px;
+	height: 1600px;
 }
 .hotel1 {
-	width: 80%;
+	width: 100%;
 	position: relative;
 	transition-property: all;
 	background-image: url(img/hotel.jpg);
 	background-repeat: no-repeat;
 	z-index: 1
 }
-/*.name {
-	width: 10%;
-	height: 10%;
+.name {
+	width: 80%;
+	height: 80%;
 	position: absolute;
+	transition: all 0.5s ease 0.5s;
 	animation:animationname 5s infinite;
-	z-index: 20;
+	z-index: 2;
 }
-@keyframes animationname {
-	0% {transform: translate(-10%,-10%); width: 100px;}
-	25% {transform: translate(-30%,-30%); width: 200px;}
-	50% {transform: translate(-50%,-50%); width: 300px;}
-	74% {transform: translate(-80%,-89%); width: 400px;}
-	100% {transform: translate(-50%,-50%); width: 500px;}
-}*/
-.car {
+.name1 {
 	width: 40%;
 	height: 20%;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+}
+@keyframes animationname {
+	0% {transform: translateY(-10%);}
+	25% {transform: translateY(-30%);}
+	50% {transform: translateY(-50%);}
+	74% {transform: translateY(-89%);}
+	100% {transform: translateY(-50%)}
+}
+.car {
+	width: 50%;
+	height: 25%;
 	top: 85%;
 	left: 5%;
 	position: absolute;
@@ -35,7 +43,7 @@ body {
     z-index: 2; 
 }
 .car1 {
-    width: 20%;
+    width: 50%;
     height:auto;
     position: absolute;
     top: 90%;
@@ -45,15 +53,34 @@ body {
     z-index: 2;*/  
 }
 @keyframes caranimation {
+	0% {transform: translateX(-10%);}
+	25% {transform: translateX(-30%);}
+	50% {transform: translateX(-50%);}
+	74% {transform: translateX(-89%);}
+	100% {transform: translateX(-50%);}
+}
+.cake {
+	width: 30%;
+	height: 20%;
+	top: 80%;
+	left: 80%;
+	position: absolute;
+	transition: all 0.5s ease 0.5s;
+	animation: cakeanimation 5s infinite;
+	z-index: 2;
+}
 
+.cake1 {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 80%;
+	left: 80%;
 }
-/*.cake {
-	width: 
+@keyframes cakeanimation {
+	0% {transform: translateX(-10%);rotate(25deg);}
+	25% {transform: translateX(-30%);rotate(50deg);}
+	50% {transform: translateX(-50%);rotate(75deg);}
+	74% {transform: translateX(-89%);rotate(100deg);}
+	100% {transform: translateX(-50%);rotate(150deg);}
 }
-@keyframes cakenimation {
-    0% {transform: translateX(0px); rotate(45deg);}
-	25% {transform: translateX(100px); rotate(90deg);}
-	50% {transform: translateX(300px); rotate(180deg);}
-	74% {transform: translateX(550px); rotate(360deg);}
-	100% {transform: translateX(800px); rotate(45deg);}
-}*/
